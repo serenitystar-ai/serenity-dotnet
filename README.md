@@ -23,7 +23,13 @@ Official .NET SDK for Serenity AIHub API. This SDK provides a convenient way to 
 Install the Serenity AIHub SDK via NuGet:
 
 ```bash
-dotnet add package SubgenAI.Serenity
+dotnet add package Serenity.AIHub.SDK.NET.Core
+```
+
+If you want to use dependency injection:
+
+```bash
+dotnet add package Serenity.AIHub.SDK.NET.Extensions
 ```
 
 ## 🔧 Usage
@@ -33,7 +39,7 @@ dotnet add package SubgenAI.Serenity
 Create and use the client directly by providing your API key:
 
 ```csharp
-using SubgenAI.Serenity.Client;
+using Serenity.AIHub.SDK.NET.Core.Client;
 
 var client = SerenityAIHubClient.Create("your-api-key");
 var conversation = await client.CreateConversation("assistantagent", null);
@@ -46,7 +52,7 @@ Register the client in your service collection:
 
 ```csharp
 // In your startup/program.cs
-using SubgenAI.Serenity.Extensions;
+using Serenity.AIHub.SDK.NET.Extensions;
 services.AddSerenityAIHub("your-api-key");
 ```
 
@@ -91,8 +97,8 @@ public class YourService
 
 ## 🗺 Project Structure
 
-- `src/SubgenAI.Serenity` - Core SDK package
-- `src/SubgenAI.Serenity.Extensions` - Extension methods for dependency injection
+- `src/Serenity.AIHub.SDK.NET.Core` - Core SDK package
+- `src/Serenity.AIHub.SDK.NET.Extensions` - Extension methods for dependency injection
 - `tests` - Test projects for the SDK
 
 ## 🤝 Contributing

@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\SubgenAI.Serenity\SubgenAI.Serenity.csproj" />
-    <ProjectReference Include="..\..\src\SubgenAI.Serenity.Extensions\SubgenAI.Serenity.Extensions.csproj" />
+    <ProjectReference Include="..\..\src\Serenity.AIHub.SDK.NET.Core\Serenity.AIHub.SDK.NET.Core.csproj" />
+    <ProjectReference Include="..\..\src\Serenity.AIHub.SDK.NET.Extensions\Serenity.AIHub.SDK.NET.Extensions.csproj" />
   </ItemGroup>
 
   <ItemGroup>

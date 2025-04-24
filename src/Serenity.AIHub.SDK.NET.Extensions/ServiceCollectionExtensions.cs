@@ -1,9 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
-using SubgenAI.Serenity.Client;
-using SubgenAI.Serenity.Constants;
-using SubgenAI.Serenity.Models;
+using Serenity.AIHub.SDK.NET.Core.Client;
+using Serenity.AIHub.SDK.NET.Core.Constants;
+using Serenity.AIHub.SDK.NET.Core.Models;
 
-namespace SubgenAI.Serenity.Extensions;
+namespace Serenity.AIHub.SDK.NET.Extensions;
 
 /// <summary>
 /// Provides extension methods for the IServiceCollection interface.
@@ -11,12 +11,12 @@ namespace SubgenAI.Serenity.Extensions;
 public static class ServiceCollectionExtensions
 {
     /// <summary>
-    /// Adds the Serenity AI Hub services to the specified IServiceCollection.
+    /// Adds the Serenity AI Hub client to the service collection.
     /// </summary>
-    /// <param name="services">The IServiceCollection to add the services to.</param>
+    /// <param name="services">The service collection.</param>
     /// <param name="apiKey">The API key to use for authentication.</param>
-    /// <param name="timeoutSeconds">Optional timeout in seconds. Defaults to 30 seconds.</param>
-    /// <returns>The IServiceCollection with the Serenity AI Hub services added.</returns>
+    /// <param name="timeoutSeconds">The timeout in seconds.</param>
+    /// <returns>The service collection.</returns>
     public static IServiceCollection AddSerenityAIHub(
         this IServiceCollection services,
         string apiKey,

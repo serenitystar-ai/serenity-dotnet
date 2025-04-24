@@ -1,24 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
-    <PackageId>SubgenAI.Serenity</PackageId>
+    <PackageId>Serenity.AIHub.SDK.NET.Extensions</PackageId>
     <Authors>Matías Rohleder</Authors>
     <Company>Subgen AI</Company>
-    <Description>Official .NET SDK for Serenity AI Hub API</Description>
-    <PackageProjectUrl>https://github.com/matiasrohleder/SubgenAI.Serenity</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/matiasrohleder/SubgenAI.Serenity</RepositoryUrl>
+    <Description>Extensions for Serenity AI Hub SDK</Description>
+    <PackageProjectUrl>https://github.com/matiasrohleder/Serenity.AIHub.SDK.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/matiasrohleder/Serenity.AIHub.SDK.NET</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageTags>ai;chat;sdk;serenity;aihub;subgen</PackageTags>
+    <PackageTags>ai;chat;sdk;serenity;aihub;extensions</PackageTags>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageIcon>icon.png</PackageIcon>
     <Version>1.1.6</Version>
-    <PackageReleaseNotes>
-        Changes in 1.1.6:
-        - Added icon
-    </PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Serenity.AIHub.SDK.NET.Core\Serenity.AIHub.SDK.NET.Core.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="/" />
@@ -26,7 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
   </ItemGroup>
 </Project>

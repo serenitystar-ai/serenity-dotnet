@@ -1,7 +1,7 @@
-namespace SubgenAI.Serenity.Models.Execute;
+namespace Serenity.AIHub.SDK.NET.Core.Models.Execute;
 
 /// <summary>
-/// Represents token usage information for an agent result.
+/// Represents the token usage information for an agent result.
 /// </summary>
 public class AgentResultTokenUsage
 {

@@ -1,0 +1,53 @@
+#PublishProfiles
+[Pp]ublish[Pp]rofiles/
+
+
+#App.Development.json
+**/[Aa]ppsettings.[Dd]evelopment.json
+
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+# Visual Studio Code
+.vscode
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
+BuildTimeStamp.txt
+
+# Visual Studio 2015
+.vs/
+
+# Dotnet local tools
+.config/dotnet-tools.json
+
+# Nuget packages
+nupkg/
+*.nupkg
+
+# Launch settings
+**/launchSettings.json
+
+# Global
+**/global.json

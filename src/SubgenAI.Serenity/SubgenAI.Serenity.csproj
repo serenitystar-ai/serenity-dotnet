@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
+    <PackageId>SubgenAI.Serenity</PackageId>
+    <Authors>Matías Rohleder</Authors>
+    <Company>Subgen AI</Company>
+    <Description>Official .NET SDK for Serenity AI Hub API</Description>
+    <PackageProjectUrl>https://github.com/matiasrohleder/SubgenAI.Serenity</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/matiasrohleder/SubgenAI.Serenity</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>ai;chat;sdk;serenity;aihub;subgen</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageIcon>icon.png</PackageIcon>
+    <Version>1.1.6</Version>
+    <PackageReleaseNotes>
+        Changes in 1.1.6:
+        - Added icon
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="/" />
+    <None Include="..\..\icon.png" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+  </ItemGroup>
+</Project>

@@ -4,13 +4,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{13E3EF07-AD57-49FB-B936-3CD0D980368D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubgenAI.Serenity", "src\SubgenAI.Serenity\SubgenAI.Serenity.csproj", "{C77A1428-255B-4B08-A3C3-23E6FD5519D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serenity.AIHub.SDK.NET.Core", "src\Serenity.AIHub.SDK.NET.Core\Serenity.AIHub.SDK.NET.Core.csproj", "{C77A1428-255B-4B08-A3C3-23E6FD5519D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubgenAI.Serenity.Extensions", "src\SubgenAI.Serenity.Extensions\SubgenAI.Serenity.Extensions.csproj", "{E5AFA0B2-EC73-47E5-BE8A-C880B2E4ECEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serenity.AIHub.SDK.NET.Extensions", "src\Serenity.AIHub.SDK.NET.Extensions\Serenity.AIHub.SDK.NET.Extensions.csproj", "{E5AFA0B2-EC73-47E5-BE8A-C880B2E4ECEB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{01B46505-10BE-43F1-98A9-74DA420FE588}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubgenAI.Serenity.IntegrationTests", "tests\SubgenAI.Serenity.IntegrationTests\SubgenAI.Serenity.IntegrationTests.csproj", "{E96DBD05-0F9D-4D47-9EBC-FB8F84AE1F0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serenity.AIHub.SDK.NET.IntegrationTests", "tests\Serenity.AIHub.SDK.NET.IntegrationTests\Serenity.AIHub.SDK.NET.IntegrationTests.csproj", "{E96DBD05-0F9D-4D47-9EBC-FB8F84AE1F0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,9 +1,9 @@
 using System.Text.Json;
 
-namespace SubgenAI.Serenity.Models.Execute;
+namespace Serenity.AIHub.SDK.NET.Core.Models.Execute;
 
 /// <summary>
-/// Represents the response from sending a message to an agent.
+/// Represents the result of an agent execution.
 /// </summary>
 public class AgentResult
 {

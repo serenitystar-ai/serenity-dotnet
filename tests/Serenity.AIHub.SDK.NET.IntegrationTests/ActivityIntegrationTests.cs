@@ -8,13 +8,12 @@ namespace Serenity.AIHub.SDK.NET.IntegrationTests;
 public class ActivityIntegrationTests : IClassFixture<TestFixture>
 {
     private readonly TestFixture _fixture;
+    private ISerenityAIHubClient _client => _fixture.ServiceProvider.GetRequiredService<ISerenityAIHubClient>();
 
     public ActivityIntegrationTests(TestFixture fixture)
     {
         _fixture = fixture;
     }
-
-    private readonly ISerenityAIHubClient _client => _fixture.ServiceProvider.GetRequiredService<ISerenityAIHubClient>();
 
     [Fact]
     public async Task Execute_WithWord_ShouldSucceed()

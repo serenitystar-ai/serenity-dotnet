@@ -1,4 +1,4 @@
-namespace SubgenAI.Serenity.Models;
+namespace Serenity.AIHub.SDK.NET.Core.Models;
 
 /// <summary>
 /// Options for the Serenity AI Hub.

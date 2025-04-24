@@ -2,11 +2,11 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.Extensions.Options;
-using SubgenAI.Serenity.Constants;
-using SubgenAI.Serenity.Models;
-using SubgenAI.Serenity.Models.Execute;
+using Serenity.AIHub.SDK.NET.Core.Constants;
+using Serenity.AIHub.SDK.NET.Core.Models;
+using Serenity.AIHub.SDK.NET.Core.Models.Execute;
 
-namespace SubgenAI.Serenity.Client;
+namespace Serenity.AIHub.SDK.NET.Core.Client;
 
 /// <inheritdoc />
 public class SerenityAIHubClient : ISerenityAIHubClient

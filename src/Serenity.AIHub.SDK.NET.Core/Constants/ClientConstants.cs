@@ -1,4 +1,4 @@
-namespace SubgenAI.Serenity.Constants;
+namespace Serenity.AIHub.SDK.NET.Core.Constants;
 
 /// <summary>
 /// Contains constant values used throughout the SDK.

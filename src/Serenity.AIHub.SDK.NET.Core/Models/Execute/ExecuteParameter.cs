@@ -1,7 +1,7 @@
-namespace SubgenAI.Serenity.Models.Execute;
+namespace Serenity.AIHub.SDK.NET.Core.Models.Execute;
 
 /// <summary>
-/// Represents a parameter for the execute endpoint.
+/// Represents a parameter for agent execution.
 /// </summary>
 public class ExecuteParameter
 {

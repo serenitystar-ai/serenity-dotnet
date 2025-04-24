@@ -8,6 +8,7 @@ public class TestFixture : IDisposable
 {
     public IServiceProvider ServiceProvider { get; }
     public IConfiguration Configuration { get; }
+    public bool HasValidApiKey { get; }
 
     public TestFixture()
     {
@@ -20,10 +21,21 @@ public class TestFixture : IDisposable
 
         var services = new ServiceCollection();
 
-        var apiKey = Configuration["SerenityAIHub:ApiKey"]
-            ?? throw new InvalidOperationException("API key not found in configuration");
-
-        services.AddSerenityAIHub(apiKey);
+        var apiKey = Configuration["SerenityAIHub:ApiKey"];
+        
+        // Check if we have a valid API key (not null, empty or the placeholder)
+        HasValidApiKey = !string.IsNullOrEmpty(apiKey) && apiKey != "your-api-key-here";
+        
+        if (HasValidApiKey)
+        {
+            services.AddSerenityAIHub(apiKey);
+        }
+        else
+        {
+            // Add a placeholder service that will throw a meaningful exception when used
+            services.AddSerenityAIHub("dummy-key-for-build");
+            Console.WriteLine("WARNING: No valid API key found. Integration tests will be skipped.");
+        }
 
         ServiceProvider = services.BuildServiceProvider();
     }
